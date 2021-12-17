@@ -25,11 +25,115 @@ class _AppPageState extends State<AppPage> {
               borderRadius: BorderRadius.circular(16),
             ),
             child: InkWell(
-              onTap: () => Modular.to.pushReplacementNamed('/drawer'),
+              onTap: () => Modular.to.navigate('/drawer'),
               borderRadius: BorderRadius.circular(16),
               child: Center(
                 child: Text(
                   'Drawer App',
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.white,
+                    shadows: [
+                      Shadow(
+                        color: Colors.black26,
+                        blurRadius: 2,
+                        offset: Offset(1, 1),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ),
+          Card(
+            color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(16),
+            ),
+            child: InkWell(
+              onTap: () => Modular.to.navigate('/responsive'),
+              borderRadius: BorderRadius.circular(16),
+              child: Center(
+                child: Text(
+                  'Responsive Layout',
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.white,
+                    shadows: [
+                      Shadow(
+                        color: Colors.black26,
+                        blurRadius: 2,
+                        offset: Offset(1, 1),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ),
+          Card(
+            color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(16),
+            ),
+            child: InkWell(
+              onTap: () => Modular.to.navigate('/notifiers'),
+              borderRadius: BorderRadius.circular(16),
+              child: Center(
+                child: Text(
+                  'Notifiers',
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.white,
+                    shadows: [
+                      Shadow(
+                        color: Colors.black26,
+                        blurRadius: 2,
+                        offset: Offset(1, 1),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ),
+          Card(
+            color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(16),
+            ),
+            child: InkWell(
+              onTap: () => Modular.to.navigate('/hooks'),
+              borderRadius: BorderRadius.circular(16),
+              child: Center(
+                child: Text(
+                  'Hooks',
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.white,
+                    shadows: [
+                      Shadow(
+                        color: Colors.black26,
+                        blurRadius: 2,
+                        offset: Offset(1, 1),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ),
+          Card(
+            color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(16),
+            ),
+            child: InkWell(
+              onTap: () => Modular.to.navigate('/web'),
+              borderRadius: BorderRadius.circular(16),
+              child: Center(
+                child: Text(
+                  'Web',
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.white,
